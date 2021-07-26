@@ -1,0 +1,1 @@
+Using the dialog control from the course, develop a function inside a script that will display a menu containing at least four choices. Capture the indicated value using the appropriate output to a file. Reading that file, test the value and display an appropriate message, different for each one.

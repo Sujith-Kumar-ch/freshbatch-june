@@ -1,0 +1,333 @@
+Objective:- Assignments will help trainees to understand the basics of unix command and how to explore and use it.
+
+DO NOT copy paste commands from internet, you can take help of the Unix in-built command manual.
+
+Be Honest to yourself!
+
+Important command and option to learn unix commands:-
+man Command
+Example:-
+man ls
+
+--help Option
+Example:-
+ls --help
+
+Assignments:-
+1. List the contents of a directory and their attributes 
+    
+Command used - (ls) 
+2. Long list the content with file, directory ownership, permissions,sizes, etc…
+
+Command used - (ls -al) 
+3. Display the size of the file in human readable format
+
+Command used - (sudo ls -l)
+4. Show all files and folders including hidden one
+
+Command used - (ls -al)
+5. list directories recursively
+
+Command used - (ls -R)
+6. Sort the files by size with largest at the top
+
+Command used - (ls -S)
+7. Sort the files by last time modified displaying the newest first.
+
+Command used - (ls -t)
+8. Diplay the location of a program/command, where it is installed.
+
+My path  (/mnt/d)
+9. Which command is used to switch directory from one to another
+
+Command used - (cd)
+10. List all the environment variables set for the current shell environment
+
+Command used - (env)
+11. Did you notice something in the output of "env" command?
+
+Shows the HOST type
+12. Which command is used to print the text or any variables value in the Console/Terminal?
+
+Command used - (cat)
+13. Print the value of the env variable "PATH" on the console
+
+14. Is linux a case-sensitive operating system?
+
+Yes
+15. Is, "Ls" same as "ls"?
+
+No
+16. Display your currently logged in user
+
+Command used - (whoami)
+unicorn
+17. how do you change the currrently logged in user to another user?
+
+Command used - (su-sudo)
+18. Which command is used to leave a shell environment that you are currently logged in to?
+
+Command used - (sudo)
+19. How do you reboot the system?
+
+Command used - (reboot)
+20. How do you shutdown the system?
+
+Command used - (reboot -p)
+21. Display all the major running processes in the system
+
+Command used - (ps aux)
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   8940   308 ?        Ssl  22:51   0:00 /init
+root         8  0.0  0.0   8940   220 tty1     Ss   22:51   0:00 /init
+unicorn      9  0.0  0.0  18084  3664 tty1     S    22:51   0:00 -bash
+unicorn    141  0.0  0.0  18664  1944 tty1     R    23:25   0:00 ps aux
+
+22. Understand the output of command used in above question of displaying processes, explain the meaning of each column and what data it displays?
+
+USER- Displays the user name      
+PID- Displays the Process Identification Number
+%CPU- Displays Core information
+%MEM- Displays memory usage in the system
+VSZ- Displays Virtual memory size  
+RSS- Displays Resident set zone to see the memory allocation
+TTY- Displays Teletype writer      
+STAT- Semantic Variables for operating systems
+START- Displays the start of run time   
+TIME COMMAND- Displays Time command in Linux is used to execute a command and prints a summary of real-time.
+23. Display the name of the system kernel
+
+Command used - (uname -r)
+Output - 4.4.0-18362-Microsoft 
+24. Display the kernel release number
+
+Command used - (uname -r)
+Output - 4.4.0-18362-Microsoft
+25. Display teh machine type of the current kernel
+
+Command used - (uname -m)
+Output - x86_64
+26. Display the name of the operating system that the kernel is running on
+
+Command used - (uname -o)
+GNU/Linux
+27. Display all info that uname command can show.
+
+Command used - (uname -a)
+Output - Linux DESKTOP-HOURH7G 4.4.0-18362-Microsoft #1049-Microsoft Thu Aug 14 12:01:00 PST 2020 x86_64 x86_64 x86_64 GNU/Linux
+28. Display the name of directory that you are currently pointing to
+
+Command used - (pwd)
+Output - /mnt/d
+29. Change the current directory to another directory that you have in your system.
+
+Command used - (cd /mnt/c)
+Output - /mnt/c
+30. Go up one directory
+
+Command used - (cd)
+31. Return to last directory
+
+Command used - (cd ..)
+32. The current directory to home(logged in user's) directory
+
+Command used - (cd)
+Output - /home
+33. How to check all the command used from the prompt (Command History)
+
+Command used - (history)
+Output - 326 commands diplayed
+34. In which file the history of commands are stored in?
+
+history file
+35. How many lines of history does the system keep and from where you can change it?
+
+About 100 =0 Line of history will be stored.
+36. How can you modify bash's history behaviour
+
+By using history flag commands.
+37. Display all the commands entered so far, now, try to run a particular command from the history list without typing that command.
+
+  1  cd
+    2  ls -al
+    3  pwd
+    4  ls /mnt/
+    5  cd /mnt/c
+    6  lk -al
+    7  ls -al
+    8  cd
+    9  ls /mnt/d
+   10  cd /mnt/d
+   11  ls -al
+   12  cd
+   13  cd /mnt/e
+   14  ls -al
+   15  cd /mnt/e
+   16  ls /mnt/
+   17  cd
+   18  cd /mnt/e
+   19  ls -al
+   20  cd
+   21  c/users
+   22  cd users/
+   23  cd /users
+   24  cd
+   25  cd users/
+   26  cd desktop/
+   27  ls -al
+   28  cd /users
+   29  cd users/
+   30  cd /mnt/c/users/dell/desktop
+   31  ls -al
+   32  cd fci/
+   33  ls -al
+   34  cd
+   35  cd /mnt/desktop/
+   36  cd /mnt/c/users/dell/desktop
+   37  ls -al
+   38  touch content.txt
+   39  nano content.txt
+   40  cat content.txt
+   41  cd
+   42  who am i
+   43  pwd
+   44  who i am
+   45  cd
+   46  who am i
+   47  clear
+   48  who am i
+   49  date
+   50  sudo
+   51  date
+   52  who am i
+   53  clear
+   54  ls -al
+   55  pwd
+   56  ls /mnt/
+   57  cd /mnt/c
+   58  ls -al
+   59  cd /mnt/ users/dell/desktop/
+   60  cd /mntt/ c/sers/del/desktop/
+   61  cd /mnt/c/users/del/desktop
+   62  cd /mnt/c/users/dell/desktop
+   63  ls -al
+   64  whoami
+   65  who am i
+   66  date
+   67  cal
+   68  cal 8 1995
+   69  cal 11 1995
+   70  cal 5 1993
+   71  cal 8 21
+   72  cal 2 69
+   73  cal may 199
+   74  cal may 1993
+   75  cal nov 1995......
+Command runned - (cd)
+
+NOTE:- TAB key is your friend when it comes to command completion and having long file and directory names autocompleted at the bash prompt for you. JUST BE LAZY AND USE TAB KEY FOR AUTO COMPLETION ;-)
+
+38. What are the different types of shell and where are they used and how do we use them?
+
+The Bourne Shell (sh) Developed at AT&T Bell Labs by Steve Bourne, the Bourne shell is regarded as the first UNIX shell ever.
+The GNU Bourne-Again Shell (bash) 
+The C Shell (csh) 
+The Korn Shell (ksh) 
+The Z Shell (zsh)
+39. What is the difference between login shell and non-login shell?
+
+Non Login Shell is the shell, which is started by the login shell. For example, A shell which you started from another shell or started by a program etc. A non login shell executes the following script to set the shell environment.
+40. How do we start login shell and non-login shell?
+
+!/bin/bash
+41. What happens when you start a login shell (which files are read and used and Why)?
+
+When Bash is invoked as an interactive login shell, or as a non-interactive shell with the --login option, it first reads and executes commands from the file /etc/profile , if that file exists. After reading that file, it looks for ~/.
+42. What happens when you start a non-login shell (Which files are read and used and Why)?
+
+When an interactive shell that is not a login shell is started, Bash reads and executes commands from ~/. bashrc , if that file exists. ... The --rcfile file option will force Bash to read and execute commands from file instead of ~/. bashrc .
+43. What are Shell Configuration Files, why do we need it?
+
+They modify the global environment with user's configurations. o ~/. bash_profile Bash configuration file read for login shells. This is the first user configuration file read. If you need to modify the PATH only for this user, this is the right place.
+44. Explain the Order of file usage from the system/user's home directory when user logs in to the System.
+
+45. What are Shell Variables, list major shell variables and what do they represent?
+
+A shell variable is a variable that is available only to the current shell. In contrast, an environment variable is available system wide and can be used by other applications on the system. ... It processes the commands entered on the command line or read from a shell script file.
+46. How we see all our env variables?
+
+Command line - (printenv)
+47. How we see all env variables in alphabical order?
+
+
+48. What Format does the env var and its values are stored?
+
+ Command used - (sudo /etc/environment)
+49. How do you create your own varible?
+
+ Command used - (myname='Navya Datla')
+50. How do you start a new bash shell?
+
+Launch a terminal from your desktop's application menu and you will see the bash shell. There are other shells, but most Linux distributions use bash by default. Press Enter after typing a command to run it. Note that you don't need to add an .exe or anything like that – programs don't have file extensions on Linux
+bash -c or wsl)
+51. Difference between Local/Shell variables to Global Variable
+
+An environment variable is a globally available, in a program and it child programs. A shell variable is only available in the current shell. To make a shell variable available as an environment variable.
+52. Making a variable accessible from other the shell in the system.
+
+If you want to make a variable available to every new process, then you can put it in /etc/environment (requires root privileges) or ~/. profile . Once you put it in these variables, you typically have to re-login.
+53. Show the real life use case of exporting a variable
+
+54. Convert the above script file into a command, The file should run with "myappp" instead of "myapp.sh"
+
+55. What is Globbing? Explain in depth with examples?
+
+The Bash shell feature that is used for matching or expanding specific types of patterns is called globbing. Globbing is mainly used to match filenames or searching for content in a file. Globbing uses wildcard characters to create the pattern.
+56. List all entries with extension ".sh"
+
+Command line - (grep -l ".sh" <Directory name>)
+57. List all entries with numbers in it.
+
+Command line - (grep -n)
+58. List all entries that starts with a character and ends with a number
+
+Command line - (grep)
+59. List all entries that name length more than 5 characters
+
+Command line - ($grep -A[NumberOfLines(5)] [search] [file] )
+60. What is Quoting? and Why do we need it?
+
+Quoting is used to remove the special meaning of certain characters or words to the shell. Quoting can be used to disable special treatment for special characters, to prevent reserved words from being recognized as such, and to prevent parameter expansion.
+61. Write few(minimum 3) unique examples that shows, how a particular problem is solved using Quoting.
+
+62. How do you find a particular files/directories based on a particular search criteria?
+HINT:- look for commands -> locate, find and whereis
+
+63. Write major difference between locate, find and whereis?
+
+Big difference is that "find" searches real files recursively down a given directory, while "locate" searches a database without requiring specific directory. Thus, if you have saved a file before updating database, find will find it , but locate won't.  "whereis" is to find a command such as you know its there somewhere but not in your path.
+64. How Globbing is different from locate, find and whereis?
+
+65. Explain the Linux File System.
+
+Linux file system is generally a built-in layer of a Linux operating system used to handle the data management of the storage. It helps to arrange the file on the disk storage. It manages the file name, file size, creation date, and much more information about a file.
+66. Explain absolute and Relative Paths
+
+67. What are the different ways of creating a File in linux System? Write an example of each and the difference between them.
+
+1.$ touch filename
+2.$ cat > filename 
+3.$ echo "This is the text" > filename
+4.$ grep This file.txt > new_file1.txt 
+5.using a text editor like vi,nano,vm
+68. In how many ways we can delete the files from linux system? write an example of each and teh difference between them.
+
+1.$ wipe -rfi private/* 
+2.sfill 
+3.rm
+69. Archiving files using linux command, write a command to archive set of files from linux commands.
+
+(tar [flag] [archive-file] [file or directory to be archived])__(1.tar cvf file.tar *.txt )
+70. Extract the archived files from the above step.
+
+1.tar xvf file.tar
