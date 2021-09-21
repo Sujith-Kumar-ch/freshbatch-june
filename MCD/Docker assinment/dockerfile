@@ -1,6 +1,0 @@
-#Docker file
-FROM python:3.10.0rc1-bullseye
-
-ADD main.py .
-
-CMD ["python","./main.py"]
